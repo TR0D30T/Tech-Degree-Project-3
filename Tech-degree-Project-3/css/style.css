@@ -2,9 +2,13 @@
     box-sizing: border-box;
 }
 body {
-    background: #fafafa;
+    background: ;
     font-family: 'Poppins', sans-serif;
     
+}
+
+*:focus {
+    outline: none;
 }
 
 .wrapper{
@@ -47,10 +51,13 @@ body {
 }
 .form_contact{
     padding-top: 1.8em;
+    padding-bottom: 1em;
     border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 .form_contact h1 {
     font-size: 20px;
+    padding-bottom: .8em;
 }
 .form_contact input:placeholder-shown {
     text-align: right; 
@@ -59,20 +66,9 @@ body {
   color: grey;
 }
 
-
-
 .form_contact select::placeholder {
     color: grey;
 }
-
-.option0 {
-    color: gray;
-}
-
-
-
-
-
 .label_form {
     color: grey;
 }
@@ -97,4 +93,48 @@ body {
 }
 .npt_class:focus, .npt_class_zip:focus {
     border: 2px solid black;
+    outline: none;
+}
+select {
+    color: grey;
+}
+/**Newsletter section**/
+
+.nws_lttr {
+  padding-bottom: 30px;
+}
+.nws_lttr h1 {
+    margin: 0;
+    font-size: 20px;
+    padding-top: 1em;
+    padding-bottom: .6em;
+}
+.nws_lttr p {
+    margin: 0;
+    font-size: 13px;
+    color: grey;
+    line-height: 18px;
+    letter-spacing: .6px;
+    padding-top: .8em;
+    padding-bottom: 1em;
+}
+.nws_lttr label {
+    padding-left: 14px;
+    margin-bottom: 8px;
+}
+.txt_area {
+    width: 100%;
+    height: 80px;
+    background-color: lightgray;
+    border-radius: 4px;
+    border: none;
+}
+footer {
+    text-align: center;
+}
+.btn {
+    width: 100%;
+    height: 60px;
+    background-color: seagreen;
+    border-radius: 5px;
 }
