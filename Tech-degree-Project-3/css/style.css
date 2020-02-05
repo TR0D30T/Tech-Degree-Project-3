@@ -2,9 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    background: ;
     font-family: 'Poppins', sans-serif;
-    
 }
 
 *:focus {
@@ -57,7 +55,6 @@ body {
     padding-bottom: 1em;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    background-color: ;
 }
 .form_contact h1 {
     font-size: 20px;
@@ -73,7 +70,7 @@ body {
 .form_contact select::placeholder {
     color: grey;
 }
-.label_form {
+.label_form, .label_form_zip {
     color: grey;
 }
 .npt_class {
@@ -154,20 +151,21 @@ footer p {
     text-align: center;
 }
 
-@media (min-width: 760px) {
+@media (min-width: 768px) {
     main {
         width: 70%;
         margin: 0 auto;
     }
     .flex_npt {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         
     }
-    .flex_npt > label {
+    .flex_npt > .label_form {
         display: inline-block;
         flex: 1;
         padding: 25px 25px 0 0;
+        
     }
     .flex_npt > input, select {
         flex: 3;
@@ -179,5 +177,23 @@ footer p {
             
     .btn {        
         font-size: 1.2em;
+    }
+    .flex_npt_zip {
+        display: flex;
+        justify-content: start;
+        flex-wrap: nowrap;
+        width: 37%;
+        
+    }
+    .npt_class_zip {
+        max-width: 30%;
+        flex: 3;
+        display: block;
+    }
+    .label_form_zip {
+        display: inline-block;
+        flex: 1;
+        padding: 25px 25px 0 0;
+           
     }
 }
