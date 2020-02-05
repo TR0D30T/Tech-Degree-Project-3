@@ -3,6 +3,7 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #F3FAFF;
 }
 
 *:focus {
@@ -95,6 +96,8 @@ body {
 .npt_class:focus, .npt_class_zip:focus, .txt_area:focus {
     border: 2px solid black;
     outline: none;
+    background-color: #91B4E4;
+    -webkit-transition: all 1.2s ease-in;
 }
 select {
     color: grey;
@@ -120,10 +123,8 @@ select {
     padding-bottom: 1em;
 }
 .nws_lttr label {
-    padding-left: 14px;
     margin-bottom: 1.6em;
     display: inline-block;
-    margin-left: 15px;
 }
 .txt_area {
     width: 100%;
@@ -131,6 +132,15 @@ select {
     background-color: lightgray;
     border-radius: 4px;
     border: none;
+}
+.label_text_area {
+    margin: 0;
+    font-size: 13px;
+    color: grey;
+    line-height: 18px;
+    letter-spacing: .6px;
+    padding-top: .8em;
+    padding-bottom: 1em;
 }
 .txt_area:focus
 footer {
